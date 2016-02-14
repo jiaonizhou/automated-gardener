@@ -2,6 +2,8 @@ package garden;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
+
 
 public class GardenViewController {
 	@FXML
@@ -22,4 +24,14 @@ public class GardenViewController {
 	@FXML
     private void initialize() {
     }
+	
+	public void turnPalmHeater(boolean on) {
+		if (on) {
+			Image img = new Image(getClass().getResource("../pics/heater-on.jpg").toExternalForm());
+			palmHeater.setImage(img);
+		} else {
+			Image img = new Image(getClass().getResource("../pics/heater-off.png").toExternalForm());
+			palmHeater.setImage(img);
+		}
+	}
 }

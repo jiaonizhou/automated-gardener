@@ -1,6 +1,7 @@
 package garden;
 
 import java.util.*;
+import garden.Garden;
 
 class Sprinkler {
 	

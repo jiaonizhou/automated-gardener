@@ -1,22 +1,17 @@
 package garden;
 
 import java.util.*;
+import garden.GardenViewController;
+import garden.Flower;
 
 class Garden {
-	static Timer timer;
-	static Date epoch;
-	
-	/*
-	public static void main (String args[]) {
-		timer = new Timer();
-		epoch = new Date();
-		System.out.println(epoch);
+	static Timer timer = new Timer();
+	static Date epoch = new Date();
+		
+	public Garden (GardenViewController vc) {
 		new Flower("rose");
-		new Sprinkler();
-		new Heater();
-		new Fertilizer();
-		while(true) {
-		}
+		//new Sprinkler();
+		new Heater(vc);
+		//new Fertilizer();
 	}
-	*/
 }

@@ -2,7 +2,7 @@ package garden;
 
 import java.util.Date;
 
-class Flower {
+public class Flower {
 	Date plantDate;
 	String plantName;
 	

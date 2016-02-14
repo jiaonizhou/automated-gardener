@@ -10,11 +10,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 import garden.GardenViewController;
-
+import garden.Garden;
 
 public class GardenUIMain extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
+	private Garden garden;
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -50,6 +51,9 @@ public class GardenUIMain extends Application {
             rootLayout.setCenter(gardenView);
             
             GardenViewController controller = loader.getController();
+            controller.turnPalmHeater(true);
+            
+            garden = new Garden(controller);
             // Use controller else where
         } catch (IOException e) {
             e.printStackTrace();
