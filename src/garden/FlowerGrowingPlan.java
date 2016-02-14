@@ -1,18 +1,16 @@
 package garden;
 
-class FlowerGrwoingPlan {
-	private int frequency;
+class FlowerGrowingPlan {
+	private static int frequency;
 	
-	public int frequency(int growthPeriod) {
-		if (growthPeriod > 0 && growthPeriod < 10) {
-			frequency = 3;
-			return frequency;
-		} else if (growthPeriod > 10 && growthPeriod < 20) {
-			frequency = 2;
-			return frequency;
+	public static int frequency(long growthPeriod) {
+		if (growthPeriod >= 0 && growthPeriod < 10) {
+			frequency = 10;
+		} else if (growthPeriod >= 10 && growthPeriod < 20) {
+			frequency = 5;
 		} else {
 			frequency = 1;
-			return frequency;
 		}
+		return frequency;
 	}
 }

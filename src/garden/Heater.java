@@ -2,28 +2,28 @@ package garden;
 
 import java.util.*;
 
-class Sprinkler {
+class Heater {
 	
-	public Sprinkler() {
+	public Heater() {
 		int frequency = FlowerGrowingPlan.frequency(0);
-		Garden.timer.schedule(new SprinklerTask(), frequency*1000);
+		Garden.timer.schedule(new HeaterTask(), frequency*1000);
 	}
 	
-	class SprinklerTask extends TimerTask {
+	class HeaterTask extends TimerTask {
 		public void run() {
-			System.out.println("Sprinkler is on!");
+			System.out.println("Heater is on!");
 		    this.cancel();
 			Date currentDate = new Date();
 			long growthPeriod = (currentDate.getTime() - Garden.epoch.getTime()) / 1000;
 			System.out.println("Time: Sec " + growthPeriod);
 			int frequency = FlowerGrowingPlan.frequency(growthPeriod);
-			Garden.timer.schedule(new SprinklerTask(), frequency*1000);
+			Garden.timer.schedule(new HeaterTask(), frequency*1000);
 		}
 	}
 	
-	class SprinklerOffTask  extends TimerTask {
+	class HeaterOffTask  extends TimerTask {
 		public void run() {
-			System.out.println("Sprinkler is off!");
+			System.out.println("Heater is off!");
 			this.cancel();
 			Date currentDate = new Date();
 			long growthPeriod = (currentDate.getTime() - Garden.epoch.getTime()) / 1000;
