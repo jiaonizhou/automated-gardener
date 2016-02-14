@@ -7,8 +7,8 @@ class Sprinkler {
 	public Sprinkler(String plantType) {
 		String growingPlan = plantType + "GrowingPlan";
 		
-		int frequency = FlowerGrwoingPlan.frequency(growthPeriod);
-		Garden.timer.schedule(new SprinklerTask(), frequency*1000);
+		//int frequency = FlowerGrwoingPlan.frequency(growthPeriod);
+		//Garden.timer.schedule(new SprinklerTask(), frequency*1000);
 	}
 	
 	class SprinklerTask extends TimerTask {

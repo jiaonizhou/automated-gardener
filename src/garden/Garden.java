@@ -19,7 +19,7 @@ class Garden {
 	//	minDiff = 
 	//	secDiff = 
 	//}
-	
+	/*
 	public static void main (String args[]) {
 		timer = new Timer();
 		epoch = new Date();
@@ -29,4 +29,5 @@ class Garden {
 		while(true) {
 		}
 	}
+	*/
 }
