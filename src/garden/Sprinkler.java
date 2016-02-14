@@ -4,6 +4,7 @@ import java.util.*;
 
 class Sprinkler {
 	
+
 	public Sprinkler() {
 		int frequency = FlowerGrowingPlan.frequency(0);
 		Garden.timer.schedule(new SprinklerTask(), frequency*1000);

@@ -6,6 +6,7 @@ class Garden {
 	static Timer timer;
 	static Date epoch;
 	
+	/*
 	public static void main (String args[]) {
 		timer = new Timer();
 		epoch = new Date();
@@ -17,4 +18,5 @@ class Garden {
 		while(true) {
 		}
 	}
+	*/
 }

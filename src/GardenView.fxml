@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="garden.GardenViewController">
+   <children>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="37.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/palm-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="197.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/palm-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="37.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/palm-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="197.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/palm-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="37.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/sunflower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="197.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/sunflower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="37.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/sunflower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="197.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/sunflower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="475.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/deciduous-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="635.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/deciduous-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="475.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/deciduous-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="635.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/deciduous-tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="475.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/tulip.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="635.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/tulip.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="475.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/tulip.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="98.0" layoutX="635.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/tulip.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="palmHeater" fitHeight="49.0" fitWidth="45.0" layoutX="142.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/heateroff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="15.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/fertilizer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sunflowerHeater" fitHeight="49.0" fitWidth="45.0" layoutX="152.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/heateroff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="15.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/fertilizer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tulipHeater" fitHeight="49.0" fitWidth="45.0" layoutX="590.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/heateroff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="719.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/fertilizer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="deciduousHeater" fitHeight="49.0" fitWidth="112.0" layoutX="590.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/heateroff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="719.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/fertilizer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="96.0" layoutX="337.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/cat.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
