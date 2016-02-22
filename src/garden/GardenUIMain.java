@@ -15,8 +15,7 @@ import garden.Garden;
 public class GardenUIMain extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
-	private Garden garden;
-
+	
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
@@ -51,10 +50,9 @@ public class GardenUIMain extends Application {
             rootLayout.setCenter(gardenView);
             
             GardenViewController controller = loader.getController();
-            controller.turnPalmHeater(true);
+            //controller.turnPalmHeater(true);
             
-            garden = new Garden(controller);
-            // Use controller else where
+            new Garden(controller);
         } catch (IOException e) {
             e.printStackTrace();
         }
