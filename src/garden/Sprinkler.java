@@ -1,6 +1,8 @@
 package garden;
 
 import java.util.*;
+import java.util.logging.Logger;
+
 import garden.GardenViewController;
 
 class Sprinkler {
@@ -33,7 +35,7 @@ class Sprinkler {
 				vc.turnDeciduousSprinkler(true);
 				vc.turnSunflowerSprinkler(true);
 				vc.turnTulipSprinkler(true);
-				System.out.println("Sprinkler is on!");
+				Logger.getLogger("Gardener").info("Sprinkler is on");
 				this.cancel();
 				Garden.timer.schedule(new SprinklerOffTask(), 1 * 1000);
 				System.out.println("Time: Sec " + growthPeriod);
