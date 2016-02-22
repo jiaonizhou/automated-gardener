@@ -7,6 +7,9 @@ import garden.GardenViewController;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.SimpleFormatter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 
 class Garden {
 	static Timer timer = new Timer();
@@ -38,7 +41,9 @@ class Garden {
 
 	    try {
 	        // This block configure the logger with handler and formatter  
-	        fh = new FileHandler("/tmp/gardener.log");  
+	    	Path currentRelativePath = Paths.get("");
+	    	String dir = currentRelativePath.toAbsolutePath().toString();
+	        fh = new FileHandler(dir + "/gardener.log");  
 	        logger.addHandler(fh);
 	        SimpleFormatter formatter = new SimpleFormatter();  
 	        fh.setFormatter(formatter);
