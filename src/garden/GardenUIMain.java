@@ -49,6 +49,11 @@ public class GardenUIMain extends Application {
             // Set person overview into the center of root layout.
             rootLayout.setCenter(gardenView);
             
+            String image = GardenUIMain.class.getResource("../pics/grass.jpg").toExternalForm();
+            rootLayout.setStyle("-fx-background-image: url('" + image + "'); " +
+                       "-fx-background-position: center center; " +
+                       "-fx-background-repeat: stretch;");
+            
             GardenViewController controller = loader.getController();
             //controller.turnPalmHeater(true);
             
