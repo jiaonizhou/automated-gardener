@@ -2,12 +2,13 @@ package garden;
 
 import java.util.Random;
 import java.util.TimerTask;
+import java.util.logging.Logger;
 
 class Weather {
 	public static int currentWeather;
 	
 	public Weather() {
-		Garden.timer.schedule(new WeatherTask(), 0, 20 * 1000);
+		Garden.timer.schedule(new WeatherTask(), 0, 24 * 1000);
 	}
 	
 	// 1 = sunny, 2 = rainy, 3 = cold, 4 = hot, 5 = pest, 6, 7, 8, 9, 10 = normal
@@ -39,6 +40,8 @@ class Weather {
 	class WeatherTask extends TimerTask {
 		public void run() {
 			Weather.currentWeather = Weather.generateRand();
+			long growthPeriod = Garden.getGrowthPeriod();
+			Logger.getLogger("Gardener").info("\n\n Today's weather/ situation is " + Weather.getWeather(Weather.currentWeather) + ". " + "Time: " + growthPeriod + " sec");
 		}
 	}
 }

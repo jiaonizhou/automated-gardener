@@ -4,12 +4,12 @@ public class GrowingPlan {
 	private static int frequency;
 	
 	public static int frequency(long growthPeriod) {
-		if (growthPeriod >= 0 && growthPeriod < 10) {
-			frequency = 10;
-		} else if (growthPeriod >= 10 && growthPeriod < 20) {
-			frequency = 5;
+		if (growthPeriod >= 0 && growthPeriod < 240) {
+			frequency = 12;
+		} else if (growthPeriod >= 240 && growthPeriod < 480) {
+			frequency = 8;
 		} else {
-			frequency = 2;
+			frequency = 6;
 		}
 		return frequency;
 	}

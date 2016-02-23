@@ -121,7 +121,7 @@ public class GardenViewController {
 			Image img2 = new Image(getClass().getResource("../pics/pesticide.png").toExternalForm());
 			palmPesticide.setImage(img2);
 		} else {
-			Image img1 = new Image(getClass().getResource("../pics/dove.png").toExternalForm());
+			Image img1 = new Image(getClass().getResource("../pics/bee.png").toExternalForm());
 			palmLadybug.setImage(img1);
 			Image img2 = new Image(getClass().getResource("../pics/chipmunk.png").toExternalForm());
 			palmPesticide.setImage(img2);
@@ -187,7 +187,7 @@ public class GardenViewController {
 			Image img2 = new Image(getClass().getResource("../pics/pesticide.png").toExternalForm());
 			deciduousPesticide.setImage(img2);
 		} else {
-			Image img1 = new Image(getClass().getResource("../pics/dove.png").toExternalForm());
+			Image img1 = new Image(getClass().getResource("../pics/bee.png").toExternalForm());
 			deciduousLadybug.setImage(img1);
 			Image img2 = new Image(getClass().getResource("../pics/chipmunk.png").toExternalForm());
 			deciduousPesticide.setImage(img2);
@@ -253,7 +253,7 @@ public class GardenViewController {
 			Image img2 = new Image(getClass().getResource("../pics/pesticide.png").toExternalForm());
 			sunflowerPesticide.setImage(img2);
 		} else {
-			Image img1 = new Image(getClass().getResource("../pics/dove.png").toExternalForm());
+			Image img1 = new Image(getClass().getResource("../pics/bee.png").toExternalForm());
 			sunflowerLadybug.setImage(img1);
 			Image img2 = new Image(getClass().getResource("../pics/chipmunk.png").toExternalForm());
 			sunflowerPesticide.setImage(img2);
@@ -319,7 +319,7 @@ public class GardenViewController {
 			Image img2 = new Image(getClass().getResource("../pics/pesticide.png").toExternalForm());
 			tulipPesticide.setImage(img2);
 		} else {
-			Image img1 = new Image(getClass().getResource("../pics/dove.png").toExternalForm());
+			Image img1 = new Image(getClass().getResource("../pics/bee.png").toExternalForm());
 			tulipLadybug.setImage(img1);
 			Image img2 = new Image(getClass().getResource("../pics/chipmunk.png").toExternalForm());
 			tulipPesticide.setImage(img2);

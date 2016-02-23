@@ -1,6 +1,7 @@
 package garden;
 
 import java.util.TimerTask;
+import java.util.logging.Logger;
 
 class Pesticide {
 	GardenViewController vc;
@@ -17,16 +18,17 @@ class Pesticide {
 	
 	public void randomPesticideOff(GardenViewController vc) {
 		this.vc = vc;
-		Garden.timer.schedule(new PesticideOffTask(), 20 * 1000);
+		Garden.timer.schedule(new PesticideOffTask(), 24 * 1000);
 	}
 	
 	class PesticideTask extends TimerTask {
 		public void run() {
+			long growthPeriod = Garden.getGrowthPeriod();
 			vc.turnPalmPesticide(true);
 			vc.turnDeciduousPesticide(true);
 			vc.turnSunflowerPesticide(true);
 			vc.turnTulipPesticide(true);
-			System.out.println("Pesticide spray and ladybug is on!");
+			Logger.getLogger("Gardener").info("Pesticide spray and ladybug is on! " + "Time: " + growthPeriod + " sec" );
 		    this.cancel();
 		}
 	}
@@ -37,7 +39,8 @@ class Pesticide {
 			vc.turnDeciduousPesticide(false);
 			vc.turnSunflowerPesticide(false);
 			vc.turnTulipPesticide(false);
-			System.out.println("Pesticide spray and ladybug is off!");
+			long growthPeriod = Garden.getGrowthPeriod();
+			Logger.getLogger("Gardener").info("Pesticide spray and ladybug is off! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}

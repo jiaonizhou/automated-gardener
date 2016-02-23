@@ -2,7 +2,6 @@ package garden;
 
 import java.util.*;
 import java.util.logging.Logger;
-
 import garden.GardenViewController;
 
 class Sprinkler {
@@ -35,10 +34,9 @@ class Sprinkler {
 				vc.turnDeciduousSprinkler(true);
 				vc.turnSunflowerSprinkler(true);
 				vc.turnTulipSprinkler(true);
-				Logger.getLogger("Gardener").info("Sprinkler is on");
+				Logger.getLogger("Gardener").info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
 				this.cancel();
-				Garden.timer.schedule(new SprinklerOffTask(), 1 * 1000);
-				System.out.println("Time: Sec " + growthPeriod);
+				Garden.timer.schedule(new SprinklerOffTask(), 3 * 1000);
 			}
 			int frequency = GrowingPlan.frequency(growthPeriod);
 			Garden.timer.schedule(new SprinklerTask(), frequency * 1000);
@@ -51,7 +49,8 @@ class Sprinkler {
 			vc.turnDeciduousSprinkler(false);
 			vc.turnSunflowerSprinkler(false);
 			vc.turnTulipSprinkler(false);
-			System.out.println("Sprinkler is off!");
+			long growthPeriod = Garden.getGrowthPeriod();
+			Logger.getLogger("Gardener").info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}
@@ -62,9 +61,10 @@ class Sprinkler {
 			vc.turnDeciduousSprinkler(true);
 			vc.turnSunflowerSprinkler(true);
 			vc.turnTulipSprinkler(true);
-			System.out.println("Sprinkler is on!");
+			long growthPeriod = Garden.getGrowthPeriod();
+			Logger.getLogger("Gardener").info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
-			Garden.timer.schedule(new SprinklerOffTask(), 20 * 1000);
+			Garden.timer.schedule(new SprinklerOffTask(), 24 * 1000);
 		}
 	}
 }

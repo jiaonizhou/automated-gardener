@@ -25,12 +25,11 @@ class Garden {
 	public Garden (GardenViewController vc) {
 		// set up logger
 		setupLogger();
-		
 		new Weather();
 		Sprinkler sprinkler = new Sprinkler(vc);
 		Heater heater = new Heater(vc);
-		Pesticide pesticide = new Pesticide(vc);
 		new Fertilizer(vc);
+		Pesticide pesticide = new Pesticide(vc);
 		new Random(vc, sprinkler, heater, pesticide);
 	}
 	

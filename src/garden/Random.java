@@ -11,14 +11,13 @@ class Random {
 	Pesticide pesticide;
 	
 	public Random(GardenViewController vc, Sprinkler sprinkler, Heater heater, Pesticide pesticide) {
+		this.vc = vc;
 		this.sprinkler = sprinkler;
 		this.heater = heater;
 		this.pesticide = pesticide;
 		int n = Weather.currentWeather;
-		System.out.println(n);
-		System.out.println(Weather.getWeather(n));
-		this.vc = vc;
 		long growthPeriod = Garden.getGrowthPeriod();
+
 		if (n == 1) {
 			Garden.timer.schedule(new RandomTask1(), growthPeriod);
 		} else if (n == 2) {
@@ -34,7 +33,7 @@ class Random {
 		vc.turnDeciduousRandomEvent(n);
 		vc.turnSunflowerRandomEvent(n);
 		vc.turnTulipRandomEvent(n);
-		Garden.timer.schedule(new RandomTask6(), 20 * 1000);
+		Garden.timer.schedule(new RandomTask6(), 24 * 1000);
 	}
 		
 	class RandomTask1 extends TimerTask {

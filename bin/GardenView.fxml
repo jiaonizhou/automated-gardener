@@ -4,7 +4,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garden.GardenViewController">
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garden.GardenViewController">
    <children>
       <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true">
          <image>
@@ -358,7 +358,7 @@
       </ImageView>
       <ImageView fx:id="palmLadybug" fitHeight="45.0" fitWidth="45.0" layoutX="280.0" layoutY="100.0" pickOnBounds="true">
       	<image>
-            <Image url="@../pics/dove.png" />
+            <Image url="@../pics/bee.png" />
          </image>
       </ImageView>
       <ImageView fx:id="palmPesticide" fitHeight="45.0" fitWidth="45.0" layoutX="280.0" layoutY="150.0" pickOnBounds="true">
@@ -374,7 +374,7 @@
       </ImageView>
       <ImageView fx:id="deciduousLadybug" fitHeight="45.0" fitWidth="45.0" layoutX="280.0" layoutY="400.0" pickOnBounds="true">
       	<image>
-            <Image url="@../pics/dove.png" />
+            <Image url="@../pics/bee.png" />
          </image>
       </ImageView>
       <ImageView fx:id="deciduousPesticide" fitHeight="45.0" fitWidth="45.0" layoutX="280.0" layoutY="450.0" pickOnBounds="true">
@@ -390,7 +390,7 @@
       </ImageView>
       <ImageView fx:id="sunflowerLadybug" fitHeight="45.0" fitWidth="45.0" layoutX="630.0" layoutY="100.0" pickOnBounds="true">
       	<image>
-            <Image url="@../pics/dove.png" />
+            <Image url="@../pics/bee.png" />
          </image>
       </ImageView>
       <ImageView fx:id="sunflowerPesticide" fitHeight="45.0" fitWidth="45.0" layoutX="630.0" layoutY="150.0" pickOnBounds="true">
@@ -406,7 +406,7 @@
       </ImageView>
       <ImageView fx:id="tulipLadybug" fitHeight="45.0" fitWidth="45.0" layoutX="630.0" layoutY="400.0" pickOnBounds="true">
       	<image>
-            <Image url="@../pics/dove.png" />
+            <Image url="@../pics/bee.png" />
          </image>
       </ImageView>
       <ImageView fx:id="tulipPesticide" fitHeight="45.0" fitWidth="45.0" layoutX="630.0" layoutY="450.0" pickOnBounds="true">
@@ -426,14 +426,54 @@
          </image>
       </ImageView>
       
-      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="280.0" layoutY="580.0" pickOnBounds="true">
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="345.0" layoutY="200.0" pickOnBounds="true">
          <image>
             <Image url="@../pics/start.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="50.0" fitWidth="80.0" layoutX="350.0" layoutY="580.0" pickOnBounds="true">
+      <ImageView fitHeight="50.0" fitWidth="80.0" layoutX="330.0" layoutY="275.0" pickOnBounds="true">
          <image>
             <Image url="@../pics/change.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="207.0" fitWidth="233.0" layoutX="721.0" layoutY="81.0">
+         <image>
+            <Image url="@../pics/legend1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="233.0" layoutX="721.0" layoutY="289.0">
+         <image>
+            <Image url="@../pics/legend2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="233.0" layoutX="721.0" layoutY="424.0">
+         <image>
+            <Image url="@../pics/legend3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="106.0" layoutX="721.0" layoutY="41.0">
+         <image>
+            <Image url="@../pics/legend.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="258.0" layoutX="21.0" layoutY="592.0">
+         <image>
+            <Image url="@../pics/readme1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="114.0" layoutX="22.0" layoutY="559.0">
+         <image>
+            <Image url="@../pics/readme.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="337.0" layoutX="651.0" layoutY="592.0">
+         <image>
+            <Image url="@../pics/readme3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="372.0" layoutX="279.0" layoutY="592.0">
+         <image>
+            <Image url="@../pics/readme2.png" />
          </image>
       </ImageView>
       
