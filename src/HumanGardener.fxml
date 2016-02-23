@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garden.HumanGardenerViewController">
+   <children>
+      <TextField fx:id="sprinklerInterval" layoutX="190.0" layoutY="42.0" />
+      <Label layoutX="45.0" layoutY="46.0" prefHeight="19.0" prefWidth="127.0" text="Sprinkler interval" />
+      <Button fx:id="updateButton" layoutX="194.0" layoutY="302.0" mnemonicParsing="false" text="Update" />
+      <Label layoutX="45.0" layoutY="97.0" prefHeight="19.0" prefWidth="127.0" text="Heater interval" />
+      <TextField fx:id="heaterInterval" layoutX="190.0" layoutY="94.0" />
+      <Label layoutX="45.0" layoutY="155.0" prefHeight="19.0" prefWidth="127.0" text="Pesticide interval" />
+      <TextField fx:id="pesticideInterval" layoutX="190.0" layoutY="152.0" />
+      <Label layoutX="45.0" layoutY="218.0" prefHeight="19.0" prefWidth="127.0" text="Fertilizer interval" />
+      <TextField fx:id="fertilizerInterval" layoutX="190.0" layoutY="215.0" />
+   </children>
+</AnchorPane>

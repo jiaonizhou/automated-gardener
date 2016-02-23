@@ -630,3 +630,329 @@ Feb 22, 2016 11:09:06 PM garden.Heater$HeaterOffTask run
 INFO: Heater is off! Time: 105 sec
 Feb 22, 2016 11:09:06 PM garden.Fertilizer$FertilizerOffTask run
 INFO: Fertilizing finished! Time: 105 sec
+Feb 22, 2016 11:09:13 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 112 sec
+Feb 22, 2016 11:09:13 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 112 sec
+Feb 22, 2016 11:09:13 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 112 sec
+Feb 22, 2016 11:09:13 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 112 sec
+Feb 22, 2016 11:09:14 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 113 sec
+Feb 22, 2016 11:09:14 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 114 sec
+Feb 22, 2016 11:09:15 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 114 sec
+Feb 22, 2016 11:09:15 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 114 sec
+Feb 22, 2016 11:09:15 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 114 sec
+Feb 22, 2016 11:09:15 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 114 sec
+Feb 22, 2016 11:09:15 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 114 sec
+Feb 22, 2016 11:09:15 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 114 sec
+Feb 22, 2016 11:09:16 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 115 sec
+Feb 22, 2016 11:09:16 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 115 sec
+Feb 22, 2016 11:09:16 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 115 sec
+Feb 22, 2016 11:09:16 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 115 sec
+Feb 22, 2016 11:09:17 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 116 sec
+Feb 22, 2016 11:09:17 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 117 sec
+Feb 22, 2016 11:09:18 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 117 sec
+Feb 22, 2016 11:09:18 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 117 sec
+Feb 22, 2016 11:09:18 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 117 sec
+Feb 22, 2016 11:09:18 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 117 sec
+Feb 22, 2016 11:09:18 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 117 sec
+Feb 22, 2016 11:09:18 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 117 sec
+Feb 22, 2016 11:09:25 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is normal. Time: 124 sec
+Feb 22, 2016 11:09:25 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 124 sec
+Feb 22, 2016 11:09:25 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 124 sec
+Feb 22, 2016 11:09:25 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 124 sec
+Feb 22, 2016 11:09:25 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is rainy. Time: 124 sec
+Feb 22, 2016 11:09:25 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 124 sec
+Feb 22, 2016 11:09:26 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Sprinkler$SprinklerOffTaskRandom run
+INFO: Sprinkler is off! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is rainy. Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Pesticide$PesticideOffTask run
+INFO: Pesticide spray and ladybug is off! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Sprinkler$SprinklerOffTaskRandom run
+INFO: Sprinkler is off! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is cold. Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is cold. Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 125 sec
+Feb 22, 2016 11:09:26 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is pest attack. Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Heater$HeaterTaskRandom run
+INFO: Heater is on! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Heater$HeaterTaskRandom run
+INFO: Heater is on! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 126 sec
+Feb 22, 2016 11:09:27 PM garden.Pesticide$PesticideTask run
+INFO: Pesticide spray and ladybug is on! Time: 126 sec
+Feb 22, 2016 11:09:28 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 127 sec
+Feb 22, 2016 11:09:28 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 127 sec
+Feb 22, 2016 11:09:28 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 127 sec
+Feb 22, 2016 11:09:28 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 127 sec
+Feb 22, 2016 11:09:29 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 128 sec
+Feb 22, 2016 11:09:29 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 128 sec
+Feb 22, 2016 11:09:29 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 128 sec
+Feb 22, 2016 11:09:29 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 128 sec
+Feb 22, 2016 11:09:30 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 129 sec
+Feb 22, 2016 11:09:30 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 129 sec
+Feb 22, 2016 11:09:30 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 129 sec
+Feb 22, 2016 11:09:30 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 129 sec
+Feb 22, 2016 11:09:30 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 129 sec
+Feb 22, 2016 11:09:30 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 129 sec
+Feb 22, 2016 11:09:30 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 129 sec
+Feb 22, 2016 11:09:37 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 136 sec
+Feb 22, 2016 11:09:37 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 136 sec
+Feb 22, 2016 11:09:37 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 136 sec
+Feb 22, 2016 11:09:37 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 136 sec
+Feb 22, 2016 11:09:38 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 137 sec
+Feb 22, 2016 11:09:38 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 137 sec
+Feb 22, 2016 11:09:38 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 137 sec
+Feb 22, 2016 11:09:38 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 137 sec
+Feb 22, 2016 11:09:38 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 137 sec
+Feb 22, 2016 11:09:38 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 137 sec
+Feb 22, 2016 11:09:38 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 137 sec
+Feb 22, 2016 11:09:39 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 138 sec
+Feb 22, 2016 11:09:39 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 138 sec
+Feb 22, 2016 11:09:39 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 138 sec
+Feb 22, 2016 11:09:39 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 138 sec
+Feb 22, 2016 11:09:39 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 138 sec
+Feb 22, 2016 11:09:39 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 138 sec
+Feb 22, 2016 11:09:39 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 138 sec
+Feb 22, 2016 11:09:40 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 139 sec
+Feb 22, 2016 11:09:40 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 139 sec
+Feb 22, 2016 11:09:40 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 139 sec
+Feb 22, 2016 11:09:40 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 139 sec
+Feb 22, 2016 11:09:41 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 140 sec
+Feb 22, 2016 11:09:41 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 140 sec
+Feb 22, 2016 11:09:41 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 140 sec
+Feb 22, 2016 11:09:41 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 140 sec
+Feb 22, 2016 11:09:41 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 140 sec
+Feb 22, 2016 11:09:41 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 140 sec
+Feb 22, 2016 11:09:41 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 140 sec
+Feb 22, 2016 11:09:42 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 141 sec
+Feb 22, 2016 11:09:42 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 141 sec
+Feb 22, 2016 11:09:42 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 141 sec
+Feb 22, 2016 11:09:42 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 141 sec
+Feb 22, 2016 11:09:42 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 141 sec
+Feb 22, 2016 11:09:42 PM garden.Heater$HeaterOffTask run
+INFO: Heater is off! Time: 141 sec
+Feb 22, 2016 11:09:42 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 141 sec
+Feb 22, 2016 11:09:49 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is normal. Time: 148 sec
+Feb 22, 2016 11:09:49 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 148 sec
+Feb 22, 2016 11:09:49 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 148 sec
+Feb 22, 2016 11:09:49 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 148 sec
+Feb 22, 2016 11:09:49 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is rainy. Time: 148 sec
+Feb 22, 2016 11:09:49 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 148 sec
+Feb 22, 2016 11:09:50 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Sprinkler$SprinklerOffTaskRandom run
+INFO: Sprinkler is off! Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is hot. Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is sunny. Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is pest attack. Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Heater$HeaterOffTaskRandom run
+INFO: Heater is off! Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Heater$HeaterTask run
+INFO: Heater is on! Time: 149 sec
+Feb 22, 2016 11:09:50 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 149 sec
+Feb 22, 2016 11:09:51 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Weather$WeatherTask run
+INFO: 
+
+ Today's weather/ situation is cold. Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Sprinkler$SprinklerTask run
+INFO: Sprinkler is on! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Pesticide$PesticideTask run
+INFO: Pesticide spray and ladybug is on! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Pesticide$PesticideTask run
+INFO: Pesticide spray and ladybug is on! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Pesticide$PesticideOffTask run
+INFO: Pesticide spray and ladybug is off! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Fertilizer$FertilizerTask run
+INFO: Fertilizing! Time: 150 sec
+Feb 22, 2016 11:09:51 PM garden.Heater$HeaterTaskRandom run
+INFO: Heater is on! Time: 150 sec
+Feb 22, 2016 11:09:52 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 151 sec
+Feb 22, 2016 11:09:52 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 151 sec
+Feb 22, 2016 11:09:53 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 152 sec
+Feb 22, 2016 11:09:53 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 152 sec
+Feb 22, 2016 11:09:53 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 152 sec
+Feb 22, 2016 11:09:53 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 152 sec
+Feb 22, 2016 11:09:54 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 153 sec
+Feb 22, 2016 11:09:54 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 153 sec
+Feb 22, 2016 11:09:54 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 153 sec
+Feb 22, 2016 11:09:54 PM garden.Sprinkler$SprinklerOffTask run
+INFO: Sprinkler is off! Time: 153 sec
+Feb 22, 2016 11:09:54 PM garden.Fertilizer$FertilizerOffTask run
+INFO: Fertilizing finished! Time: 153 sec
