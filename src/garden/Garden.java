@@ -14,25 +14,53 @@ import java.nio.file.Paths;
 class Garden {
 	static Timer timer = new Timer();
 	static Date epoch = new Date();
-	public Random random;
+	
+	private static Garden g;
+	private GardenViewController vc;
+	@SuppressWarnings("unused")
+	private Weather weather;
+	private Sprinkler sprinkler;
+	private Heater heater;
+	@SuppressWarnings("unused")
+	private Fertilizer fertilizer;
+	private Pesticide pesticide;
+	@SuppressWarnings("unused")
+	private Random random;
+
+	
+	public static Garden getGarden() {
+		return g;
+	}
+	
+	public static Garden initGarden(GardenViewController vc) {
+		if (g == null) {
+			g = new Garden(vc);
+		}
+		return g;
+	}
+	
+	public Garden (GardenViewController vc) {
+		// set up logger
+		setupLogger();
+		
+		this.vc = vc;
+	}
+	
+	public void start() {
+		weather = new Weather();
+		sprinkler = new Sprinkler(vc);
+		heater = new Heater(vc);
+		fertilizer = new Fertilizer(vc);
+		pesticide = new Pesticide(vc);
+		random = new Random(vc, sprinkler, heater, pesticide);
+	}
 	
 	public static long getGrowthPeriod() {
 		Date currentDate = new Date();
 		long growthPeriod = (currentDate.getTime() - Garden.epoch.getTime()) / 1000;
 		return growthPeriod;
 	}
-	
-	public Garden (GardenViewController vc) {
-		// set up logger
-		setupLogger();
-		new Weather();
-		Sprinkler sprinkler = new Sprinkler(vc);
-		Heater heater = new Heater(vc);
-		new Fertilizer(vc);
-		Pesticide pesticide = new Pesticide(vc);
-		new Random(vc, sprinkler, heater, pesticide);
-	}
-	
+
 	public void setupLogger() {
 		Logger logger = Logger.getLogger("Gardener");
 		logger.setLevel(Level.ALL);

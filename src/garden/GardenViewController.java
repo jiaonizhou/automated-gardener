@@ -1,7 +1,15 @@
 package garden;
 
+import java.io.IOException;
+
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 
 public class GardenViewController {
@@ -53,13 +61,38 @@ public class GardenViewController {
 	private ImageView tulipLadybug;
 	@FXML
 	private ImageView tulipPesticide;
-	
+	@FXML
+	private ImageView startButton;
+	@FXML
+	private ImageView changeButton;
+		
 	
 	public GardenViewController() {
     }
 	
 	@FXML
     private void initialize() {
+		startButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+		     @Override
+		     public void handle(MouseEvent event) {
+		    	 Garden.getGarden().start();
+		     }
+		});
+		changeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+		     @Override
+		     public void handle(MouseEvent event) {
+		    	 Parent root;
+			     try {
+			         root = FXMLLoader.load(GardenUIMain.class.getResource("../HumanGardener.fxml"));
+			         Stage stage = new Stage();
+			         stage.setTitle("Change Growing Plan");
+			         stage.setScene(new Scene(root, 450, 400));
+			         stage.show();
+			     } catch (IOException e) {
+			        e.printStackTrace();
+			     }
+		     }
+		});
     }
 	
 	public void turnPalmHeater(boolean on) {

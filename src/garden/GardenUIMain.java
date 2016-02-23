@@ -41,12 +41,9 @@ public class GardenUIMain extends Application {
 	
     public void showGardenView() {
         try {
-            // Load person overview.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(GardenUIMain.class.getResource("../GardenView.fxml"));
             AnchorPane gardenView = (AnchorPane) loader.load();
-
-            // Set person overview into the center of root layout.
             rootLayout.setCenter(gardenView);
             
             String image = GardenUIMain.class.getResource("../pics/grass.jpg").toExternalForm();
@@ -55,9 +52,7 @@ public class GardenUIMain extends Application {
                        "-fx-background-repeat: stretch;");
             
             GardenViewController controller = loader.getController();
-            //controller.turnPalmHeater(true);
-            
-            new Garden(controller);
+            Garden.initGarden(controller);
         } catch (IOException e) {
             e.printStackTrace();
         }

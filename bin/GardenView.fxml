@@ -426,12 +426,12 @@
          </image>
       </ImageView>
       
-      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="345.0" layoutY="200.0" pickOnBounds="true">
+      <ImageView fx:id="startButton" fitHeight="50.0" fitWidth="50.0" layoutX="345.0" layoutY="200.0" pickOnBounds="true">
          <image>
             <Image url="@../pics/start.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="50.0" fitWidth="80.0" layoutX="330.0" layoutY="275.0" pickOnBounds="true">
+      <ImageView fx:id="changeButton" fitHeight="50.0" fitWidth="80.0" layoutX="330.0" layoutY="275.0" pickOnBounds="true">
          <image>
             <Image url="@../pics/change.png" />
          </image>
