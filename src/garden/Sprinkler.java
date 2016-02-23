@@ -22,7 +22,7 @@ class Sprinkler {
 	public void randomSprinklerOff(GardenViewController vc) {
 		this.vc = vc;
 		long growthPeriod = Garden.getGrowthPeriod();
-		Garden.timer.schedule(new SprinklerOffTask(), growthPeriod);
+		Garden.timer.schedule(new SprinklerOffTaskRandom(), growthPeriod);
 	}
 	
 	class SprinklerTask extends TimerTask {
@@ -45,13 +45,16 @@ class Sprinkler {
 	
 	class SprinklerOffTask extends TimerTask {
 		public void run() {
-			vc.turnPalmSprinkler(false);
-			vc.turnDeciduousSprinkler(false);
-			vc.turnSunflowerSprinkler(false);
-			vc.turnTulipSprinkler(false);
-			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
-			this.cancel();
+			int n = Weather.currentWeather;
+			if (n == 3 || n == 4 || n == 5 || n == 6 || n == 7 || n == 8 || n == 9 || n == 10) {
+				vc.turnPalmSprinkler(false);
+				vc.turnDeciduousSprinkler(false);
+				vc.turnSunflowerSprinkler(false);
+				vc.turnTulipSprinkler(false);
+				long growthPeriod = Garden.getGrowthPeriod();
+				Logger.getLogger("Gardener").info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
+				this.cancel();
+			}
 		}
 	}
 	
@@ -64,7 +67,18 @@ class Sprinkler {
 			long growthPeriod = Garden.getGrowthPeriod();
 			Logger.getLogger("Gardener").info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
-			Garden.timer.schedule(new SprinklerOffTask(), 24 * 1000);
+		}
+	}
+	
+	class SprinklerOffTaskRandom extends TimerTask {
+		public void run() {
+			vc.turnPalmSprinkler(false);
+			vc.turnDeciduousSprinkler(false);
+			vc.turnSunflowerSprinkler(false);
+			vc.turnTulipSprinkler(false);
+			long growthPeriod = Garden.getGrowthPeriod();
+			Logger.getLogger("Gardener").info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
+			this.cancel();
 		}
 	}
 }

@@ -22,7 +22,7 @@ class Heater {
 	public void randomHeaterOff(GardenViewController vc) {
 		this.vc = vc;
 		long growthPeriod = Garden.getGrowthPeriod();
-		Garden.timer.schedule(new HeaterOffTask(), growthPeriod);
+		Garden.timer.schedule(new HeaterOffTaskRandom(), growthPeriod);
 	}
 	
 	class HeaterTask extends TimerTask {
@@ -45,13 +45,16 @@ class Heater {
 	
 	class HeaterOffTask extends TimerTask {
 		public void run() {
-			vc.turnPalmHeater(false);
-			vc.turnDeciduousHeater(false);
-			vc.turnSunflowerHeater(false);
-			vc.turnTulipHeater(false);
-			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Heater is off! " + "Time: " + growthPeriod + " sec");
-			this.cancel();
+			int n = Weather.currentWeather;
+			if (n == 1 || n == 2 || n == 5 || n == 6 || n == 7 || n == 8 || n == 9 || n == 10) {
+				vc.turnPalmHeater(false);
+				vc.turnDeciduousHeater(false);
+				vc.turnSunflowerHeater(false);
+				vc.turnTulipHeater(false);
+				long growthPeriod = Garden.getGrowthPeriod();
+				Logger.getLogger("Gardener").info("Heater is off! " + "Time: " + growthPeriod + " sec");
+				this.cancel();
+			}
 		}
 	}
 	
@@ -64,7 +67,18 @@ class Heater {
 			long growthPeriod = Garden.getGrowthPeriod();
 			Logger.getLogger("Gardener").info("Heater is on! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
-			Garden.timer.schedule(new HeaterOffTask(), 24 * 1000);
+		}
+	}
+	
+	class HeaterOffTaskRandom extends TimerTask {
+		public void run() {
+			vc.turnPalmHeater(false);
+			vc.turnDeciduousHeater(false);
+			vc.turnSunflowerHeater(false);
+			vc.turnTulipHeater(false);
+			long growthPeriod = Garden.getGrowthPeriod();
+			Logger.getLogger("Gardener").info("Heater is off! " + "Time: " + growthPeriod + " sec");
+			this.cancel();
 		}
 	}
 }
