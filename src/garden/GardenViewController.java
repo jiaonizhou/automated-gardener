@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 
 public class GardenViewController {
@@ -62,9 +63,9 @@ public class GardenViewController {
 	@FXML
 	private ImageView tulipPesticide;
 	@FXML
-	private ImageView startButton;
+	private Button startButton;
 	@FXML
-	private ImageView changeButton;
+	private Button changeButton;
 		
 	
 	public GardenViewController() {
@@ -78,6 +79,7 @@ public class GardenViewController {
 		    	 Garden.getGarden().start();
 		     }
 		});
+		
 		changeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
 		     @Override
 		     public void handle(MouseEvent event) {

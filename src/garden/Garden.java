@@ -12,8 +12,8 @@ import java.nio.file.Paths;
 
 
 class Garden {
-	static Timer timer = new Timer();
-	static Date epoch = new Date();
+	static Timer timer;
+	static Date epoch;
 	
 	private static Garden g;
 	private GardenViewController vc;
@@ -47,6 +47,8 @@ class Garden {
 	}
 	
 	public void start() {
+		timer = new Timer();
+		epoch = new Date();
 		weather = new Weather();
 		sprinkler = new Sprinkler(vc);
 		heater = new Heater(vc);
@@ -70,7 +72,7 @@ class Garden {
 	        // This block configure the logger with handler and formatter  
 	    	Path currentRelativePath = Paths.get("");
 	    	String dir = currentRelativePath.toAbsolutePath().toString();
-	        fh = new FileHandler(dir + "/gardener.log");  
+	        fh = new FileHandler(dir + "/gardener.log", 10000000, 1);
 	        logger.addHandler(fh);
 	        SimpleFormatter formatter = new SimpleFormatter();  
 	        fh.setFormatter(formatter);

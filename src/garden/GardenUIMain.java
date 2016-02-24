@@ -49,7 +49,7 @@ public class GardenUIMain extends Application {
             String image = GardenUIMain.class.getResource("../pics/grass.jpg").toExternalForm();
             rootLayout.setStyle("-fx-background-image: url('" + image + "'); " +
                        "-fx-background-position: center center; " +
-                       "-fx-background-repeat: stretch;");
+                       "-fx-background-repeat: round;");
             
             GardenViewController controller = loader.getController();
             Garden.initGarden(controller);

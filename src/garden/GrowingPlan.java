@@ -2,20 +2,22 @@ package garden;
 
 public class GrowingPlan {
 	private static int frequency;
-	public static int period1 = 240;
-	public static int period2 = 480;
-	public static int highFreq = 12;
+	public static int period1;
+	public static int period2;
+	public static int seed = period1 * 24;
+	public static int germination = period2 * 24;
+	public static int lowFreq = 12;
 	public static int mediumFreq = 8;
-	public static int lowFreq = 6;
+	public static int highFreq = 6;
 	
 	
 	public static int frequency(long growthPeriod) {
-		if (growthPeriod >= 0 && growthPeriod < period1) {
-			frequency = highFreq;
-		} else if (growthPeriod >= period1 && growthPeriod < period2) {
+		if (growthPeriod >= 0 && growthPeriod < seed) {
+			frequency = lowFreq;
+		} else if (growthPeriod >= seed && growthPeriod < germination) {
 			frequency = mediumFreq;
 		} else {
-			frequency = lowFreq;
+			frequency = highFreq;
 		}
 		return frequency;
 	}
