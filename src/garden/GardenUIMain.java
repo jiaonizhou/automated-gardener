@@ -46,7 +46,7 @@ public class GardenUIMain extends Application {
             AnchorPane gardenView = (AnchorPane) loader.load();
             rootLayout.setCenter(gardenView);
             
-            String image = GardenUIMain.class.getResource("../pics/grass.jpg").toExternalForm();
+            String image = GardenUIMain.class.getResource("/pics/grass.jpg").toExternalForm();
             rootLayout.setStyle("-fx-background-image: url('" + image + "'); " +
                        "-fx-background-position: center center; " +
                        "-fx-background-repeat: round;");

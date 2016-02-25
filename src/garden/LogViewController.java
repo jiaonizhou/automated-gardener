@@ -31,13 +31,16 @@ public class LogViewController {
 				.getLogManager()
 				.getRegularLogger()
 				.logMessages());
+		regularLog.appendText("");
 		randomLog.setText(LogManager
 				.getLogManager()
 				.getRandomLogger()
 				.logMessages());
+		randomLog.appendText("");
 		humanLog.setText(LogManager
 				.getLogManager()
 				.getHumanLogger()
 				.logMessages());
+		humanLog.appendText("");
 	}
 }
