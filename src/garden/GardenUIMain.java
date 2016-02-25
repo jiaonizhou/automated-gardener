@@ -27,7 +27,7 @@ public class GardenUIMain extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(GardenUIMain.class.getResource("../RootLayout.fxml"));
+            loader.setLocation(GardenUIMain.class.getResource("/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
 
             // Show the scene containing the root layout.
@@ -42,7 +42,7 @@ public class GardenUIMain extends Application {
     public void showGardenView() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(GardenUIMain.class.getResource("../GardenView.fxml"));
+            loader.setLocation(GardenUIMain.class.getResource("/GardenView.fxml"));
             AnchorPane gardenView = (AnchorPane) loader.load();
             rootLayout.setCenter(gardenView);
             

@@ -51,7 +51,7 @@ public class HumanGardenerViewController {
 				     public void handle(MouseEvent event) {
 				    	 Parent root;
 					     try {
-					         root = FXMLLoader.load(GardenUIMain.class.getResource("../Confirm.fxml"));
+					         root = FXMLLoader.load(GardenUIMain.class.getResource("/Confirm.fxml"));
 					         Stage stage = new Stage();
 					         stage.setScene(new Scene(root, 400, 50));
 					         stage.show();

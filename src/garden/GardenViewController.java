@@ -87,7 +87,7 @@ public class GardenViewController {
 		     public void handle(MouseEvent event) {
 		    	 Parent root;
 			     try {
-			         root = FXMLLoader.load(GardenUIMain.class.getResource("../HumanGardener.fxml"));
+			         root = FXMLLoader.load(GardenUIMain.class.getResource("/HumanGardener.fxml"));
 			         Stage stage = new Stage();
 			         stage.setTitle("Change Growing Plan");
 			         stage.setScene(new Scene(root, 450, 400));
@@ -103,7 +103,7 @@ public class GardenViewController {
 		    	 Parent root;
 			     try {
 			    	 FXMLLoader fxmlLoader = new FXMLLoader();
-			    	 fxmlLoader.setLocation(GardenUIMain.class.getResource("../GardenLog.fxml"));
+			    	 fxmlLoader.setLocation(GardenUIMain.class.getResource("/GardenLog.fxml"));
 			    	 root = fxmlLoader.load();
 	
 			         Stage stage = new Stage();
