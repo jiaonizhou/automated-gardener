@@ -1,7 +1,6 @@
 package garden;
 
 import java.util.TimerTask;
-import java.util.logging.Logger;
 
 class Pesticide {
 	GardenViewController vc;
@@ -28,7 +27,7 @@ class Pesticide {
 			vc.turnDeciduousPesticide(true);
 			vc.turnSunflowerPesticide(true);
 			vc.turnTulipPesticide(true);
-			Logger.getLogger("Gardener").info("Pesticide spray and ladybug is on! " + "Time: " + growthPeriod + " sec" );
+			LogManager.getLogManager().getRegularLogger().info("Pesticide spray and ladybug is on! " + "Time: " + growthPeriod + " sec" );
 		    this.cancel();
 		}
 	}
@@ -40,7 +39,7 @@ class Pesticide {
 			vc.turnSunflowerPesticide(false);
 			vc.turnTulipPesticide(false);
 			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Pesticide spray and ladybug is off! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRegularLogger().info("Pesticide spray and ladybug is off! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}

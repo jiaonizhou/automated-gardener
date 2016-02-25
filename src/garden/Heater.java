@@ -2,7 +2,6 @@ package garden;
 
 import java.util.*;
 import garden.GardenViewController;
-import java.util.logging.Logger;
 
 class Heater {
 	GardenViewController vc;
@@ -34,7 +33,7 @@ class Heater {
 				vc.turnDeciduousHeater(true);
 				vc.turnSunflowerHeater(true);
 				vc.turnTulipHeater(true);
-				Logger.getLogger("Gardener").info("Heater is on! " + "Time: " + growthPeriod + " sec");
+				LogManager.getLogManager().getRegularLogger().info("Heater is on! " + "Time: " + growthPeriod + " sec");
 				this.cancel();
 				Garden.timer.schedule(new HeaterOffTask(), 3 * 1000);
 			}
@@ -52,7 +51,7 @@ class Heater {
 				vc.turnSunflowerHeater(false);
 				vc.turnTulipHeater(false);
 				long growthPeriod = Garden.getGrowthPeriod();
-				Logger.getLogger("Gardener").info("Heater is off! " + "Time: " + growthPeriod + " sec");
+				LogManager.getLogManager().getRegularLogger().info("Heater is off! " + "Time: " + growthPeriod + " sec");
 				this.cancel();
 			}
 		}
@@ -65,7 +64,7 @@ class Heater {
 			vc.turnSunflowerHeater(true);
 			vc.turnTulipHeater(true);
 			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Heater is on! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRandomLogger().info("Heater is on! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}
@@ -77,7 +76,7 @@ class Heater {
 			vc.turnSunflowerHeater(false);
 			vc.turnTulipHeater(false);
 			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Heater is off! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRandomLogger().info("Heater is off! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}

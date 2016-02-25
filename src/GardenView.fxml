@@ -440,7 +440,7 @@
             <Image url="@../pics/legend1.png" />
          </image>
       </ImageView>
-      <Button layoutX="320.0" layoutY="271.0" mnemonicParsing="false" text="Request Log" />
+      <Button fx:id="logButton" layoutX="320.0" layoutY="271.0" mnemonicParsing="false" text="Request Log" />
       <ImageView fitHeight="149.0" fitWidth="339.0" layoutX="296.0" layoutY="522.0">
          <image>
             <Image url="@../pics/readme1.png" />

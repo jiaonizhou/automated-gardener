@@ -2,7 +2,6 @@ package garden;
 
 import java.util.*;
 import garden.GardenViewController;
-import java.util.logging.Logger;
 
 class Fertilizer {
 	GardenViewController vc;
@@ -20,7 +19,7 @@ class Fertilizer {
 			vc.turnDeciduousFertilizer(true);
 			vc.turnSunflowerFertilizer(true);
 			vc.turnTulipFertilizer(true);
-			Logger.getLogger("Gardener").info("Fertilizing! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRegularLogger().info("Fertilizing! " + "Time: " + growthPeriod + " sec");
 		    this.cancel();
 		    Garden.timer.schedule(new FertilizerOffTask(), 3 * 1000);
 			int frequency = GrowingPlan.frequency(growthPeriod);
@@ -35,7 +34,7 @@ class Fertilizer {
 			vc.turnSunflowerFertilizer(false);
 			vc.turnTulipFertilizer(false);
 			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Fertilizing finished! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRegularLogger().info("Fertilizing finished! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}

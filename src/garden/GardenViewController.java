@@ -66,6 +66,8 @@ public class GardenViewController {
 	private Button startButton;
 	@FXML
 	private Button changeButton;
+	@FXML
+	private Button logButton;
 		
 	
 	public GardenViewController() {
@@ -90,6 +92,28 @@ public class GardenViewController {
 			         stage.setTitle("Change Growing Plan");
 			         stage.setScene(new Scene(root, 450, 400));
 			         stage.show();
+			     } catch (IOException e) {
+			        e.printStackTrace();
+			     }
+		     }
+		});
+		logButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+		     @Override
+		     public void handle(MouseEvent event) {
+		    	 Parent root;
+			     try {
+			    	 FXMLLoader fxmlLoader = new FXMLLoader();
+			    	 fxmlLoader.setLocation(GardenUIMain.class.getResource("../GardenLog.fxml"));
+			    	 root = fxmlLoader.load();
+	
+			         Stage stage = new Stage();
+			         stage.setTitle("Check Garden Log");
+			         stage.setScene(new Scene(root, 600, 400));
+			         stage.show();
+			         
+			         LogViewController vc = fxmlLoader.getController();
+			         LogManager.getLogManager().setVc(vc);
+			         
 			     } catch (IOException e) {
 			        e.printStackTrace();
 			     }

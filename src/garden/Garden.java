@@ -72,7 +72,7 @@ class Garden {
 	        // This block configure the logger with handler and formatter  
 	    	Path currentRelativePath = Paths.get("");
 	    	String dir = currentRelativePath.toAbsolutePath().toString();
-	        fh = new FileHandler(dir + "/gardener.log", 10000000, 1);
+	        fh = new FileHandler(dir + "/gardener.log", 50000000, 1);
 	        logger.addHandler(fh);
 	        SimpleFormatter formatter = new SimpleFormatter();  
 	        fh.setFormatter(formatter);

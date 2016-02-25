@@ -44,6 +44,8 @@ public class HumanGardenerViewController {
 				GrowingPlan.lowFreq = Integer.parseInt(lowFreq.getText());
 				GrowingPlan.mediumFreq = Integer.parseInt(mediumFreq.getText());
 				GrowingPlan.highFreq = Integer.parseInt(highFreq.getText());
+				
+				LogManager.getLogManager().getHumanLogger().info("Growing plan changed to");
 				updateButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
 				     @Override
 				     public void handle(MouseEvent event) {

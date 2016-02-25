@@ -1,7 +1,6 @@
 package garden;
 
 import java.util.*;
-import java.util.logging.Logger;
 import garden.GardenViewController;
 
 class Sprinkler {
@@ -34,7 +33,7 @@ class Sprinkler {
 				vc.turnDeciduousSprinkler(true);
 				vc.turnSunflowerSprinkler(true);
 				vc.turnTulipSprinkler(true);
-				Logger.getLogger("Gardener").info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
+				LogManager.getLogManager().getRegularLogger().info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
 				this.cancel();
 				Garden.timer.schedule(new SprinklerOffTask(), 3 * 1000);
 			}
@@ -52,7 +51,7 @@ class Sprinkler {
 				vc.turnSunflowerSprinkler(false);
 				vc.turnTulipSprinkler(false);
 				long growthPeriod = Garden.getGrowthPeriod();
-				Logger.getLogger("Gardener").info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
+				LogManager.getLogManager().getRegularLogger().info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
 				this.cancel();
 			}
 		}
@@ -65,7 +64,7 @@ class Sprinkler {
 			vc.turnSunflowerSprinkler(true);
 			vc.turnTulipSprinkler(true);
 			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRandomLogger().info("Sprinkler is on! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}
@@ -77,7 +76,7 @@ class Sprinkler {
 			vc.turnSunflowerSprinkler(false);
 			vc.turnTulipSprinkler(false);
 			long growthPeriod = Garden.getGrowthPeriod();
-			Logger.getLogger("Gardener").info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
+			LogManager.getLogManager().getRandomLogger().info("Sprinkler is off! " + "Time: " + growthPeriod + " sec");
 			this.cancel();
 		}
 	}
